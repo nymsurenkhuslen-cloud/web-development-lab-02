@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Лаб 2 - Бүртгэлийн Анкет</title>
+</head>
+<body>
+  <header>
+    <h1>Оюутны Бүртгэлийн Систем</h1>
+    <nav>
+      <a href="#burtgel">Бүртгэлийн анкет</a> |
+      <a href="#sonirkhol">Миний сонирхол</a> |
+      <a href="#dun">Миний дүн</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="burtgel">
+      <h2>Хэрэглэгчийн бүртгэлийн анкет</h2>
+      <article>
+        <form action="#" method="post">
+          <p>
+            <label for="fullname">Овог, нэр:</label><br />
+            <input
+              type="text"
+              id="fullname"
+              name="fullname"
+              required
+              minlength="2"
+              pattern="[А-Яа-яӨөҮүЁёA-Za-z\s]+"
+              placeholder="Жишээ: Нямсүрэн Хүслэн"
+            />
+          </p>
+
+          <p>
+            <label for="email">И-мэйл хаяг:</label><br />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="name@example.com"
+            />
+          </p>
+
+          <p>
+            <label for="password">Нууц үг (дор хаяж 6 тэмдэгт):</label><br />
+            <input
+              type="password"
+              id="password"
+              name="password"
+              required
+              minlength="6"
+            />
+          </p>
+
+          <p>
+            <label for="birthdate">Төрсөн огноо:</label><br />
+            <input
+              type="date"
+              id="birthdate"
+              name="birthdate"
+              required
+            />
+          </p>
+
+          <p>
+            <label for="avatar">Цээж зураг / Файл:</label><br />
+            <input
+              type="file"
+              id="avatar"
+              name="avatar"
+              required
+            />
+          </p>
+
+          <p>
+            <label for="course">Хөтөлбөр / Анги:</label><br />
+            <select id="course" name="course" required>
+              <option value="">-- Сонгоно уу --</option>
+              <option value="it">Мэдээллийн технологи</option>
+              <option value="cs">Компьютерийн ухаан</option>
+              <option value="is">Мэдээллийн систем</option>
+            </select>
+          </p>
+
+          <p>
+            <span>Хүйс:</span><br />
+            <label>
+              <input type="radio" name="gender" value="male" required /> Эрэгтэй
+            </label>
+            <label>
+              <input type="radio" name="gender" value="female" /> Эмэгтэй
+            </label>
+          </p>
+
+          <p>
+            <label>
+              <input type="checkbox" name="terms" required />
+              Үйлчилгээний нөхцөлийг зөвшөөрч байна
+            </label>
+          </p>
+
+          <p>
+            <label for="note">Нэмэлт мэдээлэл:</label><br />
+            <textarea
+              id="note"
+              name="note"
+              rows="4"
+              cols="40"
+              minlength="5"
+              required
+              placeholder="Өөрийн тухай товч бичнэ үү..."
+            ></textarea>
+          </p>
+
+          <button type="submit">Бүртгүүлэх</button>
+        </form>
+      </article>
+    </section>
+
+    <section id="sonirkhol">
+      <h2>Миний сонирхол</h2>
+      <ul>
+        <li>Веб хөгжүүлэлт ба UI/UX дизайн</li>
+        <li>Мэдээллийн аюулгүй байдал ба криптограф</li>
+        <li>Линукс систем ба хувилбар хяналт</li>
+      </ul>
+    </section>
+
+    <section id="dun">
+      <h2>Миний дүн</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Хичээлийн нэр</th>
+            <th>Дүн</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Веб хөгжүүлэлт</td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>Мэдээллийн аюулгүй байдал</td>
+            <td>A-</td>
+          </tr>
+          <tr>
+            <td>Үйлдлийн систем</td>
+            <td>B+</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 ЛАБ 2 - Семантик HTML Форм</p>
+  </footer>
+</body>
+</html>
